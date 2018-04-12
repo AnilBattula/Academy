@@ -1,0 +1,4 @@
+MethodName,TestResult
+BookACruiseStep,FAIL
+SignUp,PASS
+WithValidLoginCredentials,PASS

@@ -9,10 +9,33 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">Academy-Automation</th></tr>
-<tr><td><a href="#t0">Test-chrome-Web</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">30,491</td><td>regression, smoke</td><td></td></tr>
+<tr><td><a href="#t0">Test-chrome-Web</a></td><td class="num">2</td><td class="num">0</td><td class="num attn">1</td><td class="num">166,928</td><td>regression, smoke</td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Academy-Automation</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test-chrome-Web &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.vv.test.automation.web.stepdefinition.SignUpAsLearnerStep</td><td><a href="#m0">SignUp</a></td><td rowspan="1">1523453503786</td><td rowspan="1">8532</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Academy-Automation</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test-chrome-Web &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.vv.test.automation.web.stepdefinition.BookACruiseStep</td><td><a href="#m0">BookACruiseStep</a></td><td rowspan="1">1523530330230</td><td rowspan="1">45303</td></tr><tr><th colspan="4">Test-chrome-Web &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.vv.test.automation.web.stepdefinition.LoginWithValidLearnerCredentialsStep</td><td><a href="#m1">WithValidLoginCredentials</a></td><td rowspan="1">1523530448391</td><td rowspan="1">20477</td></tr><tr class="passedodd"><td rowspan="1">com.vv.test.automation.web.stepdefinition.SignUpAsLearnerStep</td><td><a href="#m2">SignUp</a></td><td rowspan="1">1523530412975</td><td rowspan="1">9469</td></tr></tbody>
 </table>
-<h2>Test-chrome-Web</h2><h3 id="m0">com.vv.test.automation.web.stepdefinition.SignUpAsLearnerStep#SignUp</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">About to begin Test :- SignUp<br/>About to begin executing method :- SignUpAsLearnerStep.SignUp<br/>Completed executing method  :- SignUpAsLearnerStep.SignUp<br/>About to begin executing method :- TestEngineWeb.afterMethod</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test-chrome-Web</h2><h3 id="m0">com.vv.test.automation.web.stepdefinition.BookACruiseStep#BookACruiseStep</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">About to begin Test :- BookACruiseStep<br/>About to begin executing method :- BookACruiseStep.BookACruiseStep<br/>Completed executing method  :- BookACruiseStep.BookACruiseStep<br/>About to begin executing method :- TestEngineWeb.afterMethod</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">cucumber.runtime.CucumberException: java.lang.AssertionError: Test Case Failed because - Failed to complete - the user is able to book a cruise
+	at cucumber.api.testng.TestNGCucumberRunner.runCukes(TestNGCucumberRunner.java:57)
+	at com.vv.test.automation.web.stepdefinition.BookACruiseStep.BookACruiseStep(BookACruiseStep.java:78)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.AssertionError: Test Case Failed because - Failed to complete - the user is able to book a cruise
+	at com.vv.test.automation.web.stepdefinition.BookACruiseStep.TestCaseStatus(BookACruiseStep.java:92)
+	at com.vv.test.automation.web.stepdefinition.BookACruiseStep.after(BookACruiseStep.java:108)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+	at cucumber.runtime.Runtime.runAfterHooks(Runtime.java:206)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:46)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at cucumber.api.testng.TestNGCucumberRunner.runCukes(TestNGCucumberRunner.java:50)
+	... 21 more
+... Removed 21 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.vv.test.automation.web.stepdefinition.LoginWithValidLearnerCredentialsStep#WithValidLoginCredentials</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">About to begin Test :- WithValidLoginCredentials<br/>About to begin executing method :- LoginWithValidLearnerCredentialsStep.WithValidLoginCredentials<br/>Completed executing method  :- LoginWithValidLearnerCredentialsStep.WithValidLoginCredentials<br/>About to begin executing method :- TestEngineWeb.afterMethod</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.vv.test.automation.web.stepdefinition.SignUpAsLearnerStep#SignUp</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">About to begin Test :- SignUp<br/>About to begin executing method :- SignUpAsLearnerStep.SignUp<br/>Completed executing method  :- SignUpAsLearnerStep.SignUp<br/>About to begin executing method :- TestEngineWeb.afterMethod</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test-chrome-Web</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>2/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Apr 11 19:01:28 IST 2018</td>
+<td>Started on:</td><td>Thu Apr 12 16:21:48 IST 2018</td>
 </tr>
-<tr><td>Total time:</td><td>30 seconds (30491 ms)</td>
+<tr><td>Total time:</td><td>166 seconds (166928 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td>regression smoke </td>
 </tr><tr>
@@ -67,6 +67,93 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.vv.test.automation.web.stepdefinition.BookACruiseStep.BookACruiseStep()'><b>BookACruiseStep</b><br>Test class: com.vv.test.automation.web.stepdefinition.BookACruiseStep<br>Test method: BookACruise<br/>
+<a href="#Output-1255563304" onClick='toggleBox("Output-1255563304", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1255563304" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1255563304">
+About to begin Test :- BookACruiseStep<br/>
+About to begin executing method :- BookACruiseStep.BookACruiseStep<br/>
+Completed executing method  :- BookACruiseStep.BookACruiseStep<br/>
+About to begin executing method :- TestEngineWeb.afterMethod<br/>
+</div>
+</td>
+<td><div><pre>cucumber.runtime.CucumberException: java.lang.AssertionError: Test Case Failed because - Failed to complete - the user is able to book a cruise
+	at cucumber.api.testng.TestNGCucumberRunner.runCukes(TestNGCucumberRunner.java:57)
+	at com.vv.test.automation.web.stepdefinition.BookACruiseStep.BookACruiseStep(BookACruiseStep.java:78)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.AssertionError: Test Case Failed because - Failed to complete - the user is able to book a cruise
+	at com.vv.test.automation.web.stepdefinition.BookACruiseStep.TestCaseStatus(BookACruiseStep.java:92)
+	at com.vv.test.automation.web.stepdefinition.BookACruiseStep.after(BookACruiseStep.java:108)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+	at cucumber.runtime.Runtime.runAfterHooks(Runtime.java:206)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:46)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at cucumber.api.testng.TestNGCucumberRunner.runCukes(TestNGCucumberRunner.java:50)
+	... 21 more
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1255563304", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1255563304'><pre>cucumber.runtime.CucumberException: java.lang.AssertionError: Test Case Failed because - Failed to complete - the user is able to book a cruise
+	at cucumber.api.testng.TestNGCucumberRunner.runCukes(TestNGCucumberRunner.java:57)
+	at com.vv.test.automation.web.stepdefinition.BookACruiseStep.BookACruiseStep(BookACruiseStep.java:78)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.AssertionError: Test Case Failed because - Failed to complete - the user is able to book a cruise
+	at org.testng.Assert.fail(Assert.java:96)
+	at com.vv.test.automation.web.stepdefinition.BookACruiseStep.TestCaseStatus(BookACruiseStep.java:92)
+	at com.vv.test.automation.web.stepdefinition.BookACruiseStep.after(BookACruiseStep.java:108)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+	at cucumber.runtime.Runtime.runAfterHooks(Runtime.java:206)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:46)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at cucumber.api.testng.TestNGCucumberRunner.runCukes(TestNGCucumberRunner.java:50)
+	... 21 more
+</pre></div></td>
+<td>45</td>
+<td>com.vv.test.automation.web.stepdefinition.BookACruiseStep@341b80b2</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -76,10 +163,10 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.vv.test.automation.web.stepdefinition.SignUpAsLearnerStep.SignUp()'><b>SignUp</b><br>Test class: com.vv.test.automation.web.stepdefinition.SignUpAsLearnerStep<br>Test method: KhanAcademy<br/>
-<a href="#Output-423033981" onClick='toggleBox("Output-423033981", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-609901886" onClick='toggleBox("Output-609901886", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-423033981" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-423033981">
+<a href="#Output-609901886" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-609901886">
 About to begin Test :- SignUp<br/>
 About to begin executing method :- SignUpAsLearnerStep.SignUp<br/>
 Completed executing method  :- SignUpAsLearnerStep.SignUp<br/>
@@ -87,8 +174,23 @@ About to begin executing method :- TestEngineWeb.afterMethod<br/>
 </div>
 </td>
 <td></td>
-<td>8</td>
-<td>com.vv.test.automation.web.stepdefinition.SignUpAsLearnerStep@534df152</td></tr>
+<td>9</td>
+<td>com.vv.test.automation.web.stepdefinition.SignUpAsLearnerStep@1b083826</td></tr>
+<tr>
+<td title='com.vv.test.automation.web.stepdefinition.LoginWithValidLearnerCredentialsStep.WithValidLoginCredentials()'><b>WithValidLoginCredentials</b><br>Test class: com.vv.test.automation.web.stepdefinition.LoginWithValidLearnerCredentialsStep<br>Test method: WithValidLoginCredentials<br/>
+<a href="#Output-750529017" onClick='toggleBox("Output-750529017", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-750529017" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-750529017">
+About to begin Test :- WithValidLoginCredentials<br/>
+About to begin executing method :- LoginWithValidLearnerCredentialsStep.WithValidLoginCredentials<br/>
+Completed executing method  :- LoginWithValidLearnerCredentialsStep.WithValidLoginCredentials<br/>
+About to begin executing method :- TestEngineWeb.afterMethod<br/>
+</div>
+</td>
+<td></td>
+<td>20</td>
+<td>com.vv.test.automation.web.stepdefinition.LoginWithValidLearnerCredentialsStep@105fece7</td></tr>
 </table><p>
 </body>
 </html>

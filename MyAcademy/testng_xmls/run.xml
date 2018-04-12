@@ -9,7 +9,7 @@
 			class-name="com.vv.test.automation.listeners.ExecutionListener" />
 	</listeners>
 
-	
+
 	<test name="Test-chrome-Web" junit="false"
 		skipfailedinvocationcounts="false" preserve-order="true"
 		group-by-instances="false" allow-return-values="false">
@@ -18,10 +18,10 @@
 		<parameter name="browser_version" value="63" />
 		<parameter name="os" value="Windows" />
 		<parameter name="os_version" value="7" />
-		<parameter name="environment" value="stag" />
+		<!-- <parameter name="environment" value="stag" /> -->
 		<parameter name="userRegion" value="US" />
-		<parameter name="seleniumGrid" value="false" />		
-		<parameter name="cloudExecution" value="false" />		
+		<parameter name="seleniumGrid" value="false" />
+		<parameter name="cloudExecution" value="false" />
 		<parameter name="emailReport" value="false" />
 		<groups>
 			<run>
@@ -30,8 +30,14 @@
 			</run>
 		</groups>
 		<classes>
-		 			 	  <class name="com.vv.test.automation.web.stepdefinition.SignUpAsLearnerStep"/>	
-			</classes>
+			<class
+				name="com.vv.test.automation.web.stepdefinition.BookACruiseStep" />
+			<class
+				name="com.vv.test.automation.web.stepdefinition.SignUpAsLearnerStep" />
+			<class
+				name="com.vv.test.automation.web.stepdefinition.LoginWithValidLearnerCredentialsStep" />
+
+		</classes>
 
 	</test>
 

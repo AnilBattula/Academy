@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="1" total="2" passed="1">
+<testng-results skipped="0" failed="1" ignored="11" total="14" passed="2">
   <reporter-output>
     <line>
       <![CDATA[About to begin executing Suite :- Academy-Automation]]>
@@ -18,6 +18,51 @@
     </line>
     <line>
       <![CDATA[Completed executing method  :- TestEngineWeb.beforeTest]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing method :- AbstractTestNGCucumberTests.setUpClass]]>
+    </line>
+    <line>
+      <![CDATA[Completed executing method  :- AbstractTestNGCucumberTests.setUpClass]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing method :- TestEngineWeb.beforeClass]]>
+    </line>
+    <line>
+      <![CDATA[Completed executing method  :- TestEngineWeb.beforeClass]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing method :- TestEngineWeb.beforeMethod]]>
+    </line>
+    <line>
+      <![CDATA[Completed executing method  :- TestEngineWeb.beforeMethod]]>
+    </line>
+    <line>
+      <![CDATA[About to begin Test :- BookACruiseStep]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing method :- BookACruiseStep.BookACruiseStep]]>
+    </line>
+    <line>
+      <![CDATA[Completed executing method  :- BookACruiseStep.BookACruiseStep]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing method :- TestEngineWeb.afterMethod]]>
+    </line>
+    <line>
+      <![CDATA[Completed executing method  :- TestEngineWeb.afterMethod]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing method :- TestEngineWeb.afterClass]]>
+    </line>
+    <line>
+      <![CDATA[Completed executing method  :- TestEngineWeb.afterClass]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing method :- AbstractTestNGCucumberTests.tearDownClass]]>
+    </line>
+    <line>
+      <![CDATA[Completed executing method  :- AbstractTestNGCucumberTests.tearDownClass]]>
     </line>
     <line>
       <![CDATA[About to begin executing method :- AbstractTestNGCucumberTests.setUpClass]]>
@@ -65,6 +110,51 @@
       <![CDATA[Completed executing method  :- AbstractTestNGCucumberTests.tearDownClass]]>
     </line>
     <line>
+      <![CDATA[About to begin executing method :- AbstractTestNGCucumberTests.setUpClass]]>
+    </line>
+    <line>
+      <![CDATA[Completed executing method  :- AbstractTestNGCucumberTests.setUpClass]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing method :- TestEngineWeb.beforeClass]]>
+    </line>
+    <line>
+      <![CDATA[Completed executing method  :- TestEngineWeb.beforeClass]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing method :- TestEngineWeb.beforeMethod]]>
+    </line>
+    <line>
+      <![CDATA[Completed executing method  :- TestEngineWeb.beforeMethod]]>
+    </line>
+    <line>
+      <![CDATA[About to begin Test :- WithValidLoginCredentials]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing method :- LoginWithValidLearnerCredentialsStep.WithValidLoginCredentials]]>
+    </line>
+    <line>
+      <![CDATA[Completed executing method  :- LoginWithValidLearnerCredentialsStep.WithValidLoginCredentials]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing method :- TestEngineWeb.afterMethod]]>
+    </line>
+    <line>
+      <![CDATA[Completed executing method  :- TestEngineWeb.afterMethod]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing method :- TestEngineWeb.afterClass]]>
+    </line>
+    <line>
+      <![CDATA[Completed executing method  :- TestEngineWeb.afterClass]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing method :- AbstractTestNGCucumberTests.tearDownClass]]>
+    </line>
+    <line>
+      <![CDATA[Completed executing method  :- AbstractTestNGCucumberTests.tearDownClass]]>
+    </line>
+    <line>
       <![CDATA[About to begin executing method :- TestEngineWeb.afterTest]]>
     </line>
     <line>
@@ -77,19 +167,21 @@
       <![CDATA[Completed executing method  :- TestEngineWeb.afterSuite]]>
     </line>
   </reporter-output>
-  <suite name="Academy-Automation" duration-ms="30491" started-at="2018-04-11T13:31:28Z" finished-at="2018-04-11T13:31:58Z">
+  <suite name="Academy-Automation" duration-ms="166928" started-at="2018-04-12T10:51:48Z" finished-at="2018-04-12T10:54:35Z">
     <groups>
       <group name="smoke">
-        <method signature="SignUpAsLearnerStep.SignUp()[pri:0, instance:com.vv.test.automation.web.stepdefinition.SignUpAsLearnerStep@534df152]" name="SignUp" class="com.vv.test.automation.web.stepdefinition.SignUpAsLearnerStep"/>
+        <method signature="BookACruiseStep.BookACruiseStep()[pri:0, instance:com.vv.test.automation.web.stepdefinition.BookACruiseStep@341b80b2]" name="BookACruiseStep" class="com.vv.test.automation.web.stepdefinition.BookACruiseStep"/>
+        <method signature="LoginWithValidLearnerCredentialsStep.WithValidLoginCredentials()[pri:0, instance:com.vv.test.automation.web.stepdefinition.LoginWithValidLearnerCredentialsStep@105fece7]" name="WithValidLoginCredentials" class="com.vv.test.automation.web.stepdefinition.LoginWithValidLearnerCredentialsStep"/>
+        <method signature="SignUpAsLearnerStep.SignUp()[pri:0, instance:com.vv.test.automation.web.stepdefinition.SignUpAsLearnerStep@1b083826]" name="SignUp" class="com.vv.test.automation.web.stepdefinition.SignUpAsLearnerStep"/>
       </group> <!-- smoke -->
     </groups>
-    <test name="Test-chrome-Web" duration-ms="30491" started-at="2018-04-11T13:31:28Z" finished-at="2018-04-11T13:31:58Z">
-      <class name="com.vv.test.automation.web.stepdefinition.SignUpAsLearnerStep">
-        <test-method status="PASS" signature="beforeSuite(org.testng.ITestContext)[pri:0, instance:com.vv.test.automation.web.stepdefinition.SignUpAsLearnerStep@534df152]" name="beforeSuite" is-config="true" duration-ms="17" started-at="2018-04-11T13:31:28Z" finished-at="2018-04-11T13:31:28Z">
+    <test name="Test-chrome-Web" duration-ms="166928" started-at="2018-04-12T10:51:48Z" finished-at="2018-04-12T10:54:35Z">
+      <class name="com.vv.test.automation.web.stepdefinition.BookACruiseStep">
+        <test-method status="PASS" signature="beforeSuite(org.testng.ITestContext)[pri:0, instance:com.vv.test.automation.web.stepdefinition.BookACruiseStep@341b80b2]" name="beforeSuite" is-config="true" duration-ms="32" started-at="2018-04-12T10:51:48Z" finished-at="2018-04-12T10:51:48Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@769e7ee8]]>
+                <![CDATA[org.testng.TestRunner@78aab498]]>
               </value>
             </param>
           </params>
@@ -99,11 +191,11 @@
             </line>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="beforeTest(org.testng.ITestContext)[pri:0, instance:com.vv.test.automation.web.stepdefinition.SignUpAsLearnerStep@534df152]" name="beforeTest" is-config="true" duration-ms="1594" started-at="2018-04-11T13:31:28Z" finished-at="2018-04-11T13:31:29Z">
+        <test-method status="PASS" signature="beforeTest(org.testng.ITestContext)[pri:0, instance:com.vv.test.automation.web.stepdefinition.BookACruiseStep@341b80b2]" name="beforeTest" is-config="true" duration-ms="1576" started-at="2018-04-12T10:51:48Z" finished-at="2018-04-12T10:51:49Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@769e7ee8]]>
+                <![CDATA[org.testng.TestRunner@78aab498]]>
               </value>
             </param>
           </params>
@@ -113,21 +205,164 @@
             </line>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.vv.test.automation.web.stepdefinition.SignUpAsLearnerStep@534df152]" name="setUpClass" is-config="true" duration-ms="219" started-at="2018-04-11T13:31:29Z" finished-at="2018-04-11T13:31:30Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.vv.test.automation.web.stepdefinition.BookACruiseStep@341b80b2]" name="setUpClass" is-config="true" duration-ms="232" started-at="2018-04-12T10:51:49Z" finished-at="2018-04-12T10:51:49Z">
           <reporter-output>
             <line>
               <![CDATA[Completed executing method  :- AbstractTestNGCucumberTests.setUpClass]]>
             </line>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.vv.test.automation.web.stepdefinition.SignUpAsLearnerStep@534df152]" name="beforeClass" is-config="true" duration-ms="13604" started-at="2018-04-11T13:31:30Z" finished-at="2018-04-11T13:31:43Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.vv.test.automation.web.stepdefinition.BookACruiseStep@341b80b2]" name="beforeClass" is-config="true" duration-ms="20131" started-at="2018-04-12T10:51:49Z" finished-at="2018-04-12T10:52:10Z">
           <reporter-output>
             <line>
               <![CDATA[Completed executing method  :- TestEngineWeb.beforeClass]]>
             </line>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.vv.test.automation.web.stepdefinition.SignUpAsLearnerStep@534df152]" name="beforeMethod" is-config="true" duration-ms="145" started-at="2018-04-11T13:31:43Z" finished-at="2018-04-11T13:31:43Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.vv.test.automation.web.stepdefinition.BookACruiseStep@341b80b2]" name="beforeMethod" is-config="true" duration-ms="122" started-at="2018-04-12T10:52:10Z" finished-at="2018-04-12T10:52:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.vv.test.automation.web.stepdefinition.BookACruiseStep.BookACruiseStep()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Completed executing method  :- TestEngineWeb.beforeMethod]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="FAIL" signature="BookACruiseStep()[pri:0, instance:com.vv.test.automation.web.stepdefinition.BookACruiseStep@341b80b2]" name="BookACruiseStep" duration-ms="45303" started-at="2018-04-12T10:52:10Z" description="BookACruise" finished-at="2018-04-12T10:52:55Z">
+          <exception class="cucumber.runtime.CucumberException">
+            <message>
+              <![CDATA[java.lang.AssertionError: Test Case Failed because - Failed to complete - the user is able to book a cruise]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[cucumber.runtime.CucumberException: java.lang.AssertionError: Test Case Failed because - Failed to complete - the user is able to book a cruise
+at cucumber.api.testng.TestNGCucumberRunner.runCukes(TestNGCucumberRunner.java:57)
+at com.vv.test.automation.web.stepdefinition.BookACruiseStep.BookACruiseStep(BookACruiseStep.java:78)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.util.concurrent.FutureTask.run(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.AssertionError: Test Case Failed because - Failed to complete - the user is able to book a cruise
+at org.testng.Assert.fail(Assert.java:96)
+at com.vv.test.automation.web.stepdefinition.BookACruiseStep.TestCaseStatus(BookACruiseStep.java:92)
+at com.vv.test.automation.web.stepdefinition.BookACruiseStep.after(BookACruiseStep.java:108)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at cucumber.runtime.Utils$1.call(Utils.java:40)
+at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+at cucumber.runtime.Utils.invoke(Utils.java:34)
+at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+at cucumber.runtime.Runtime.runAfterHooks(Runtime.java:206)
+at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:46)
+at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+at cucumber.api.testng.TestNGCucumberRunner.runCukes(TestNGCucumberRunner.java:50)
+... 21 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- cucumber.runtime.CucumberException -->
+          <reporter-output>
+            <line>
+              <![CDATA[About to begin Test :- BookACruiseStep]]>
+            </line>
+            <line>
+              <![CDATA[About to begin executing method :- BookACruiseStep.BookACruiseStep]]>
+            </line>
+            <line>
+              <![CDATA[Completed executing method  :- BookACruiseStep.BookACruiseStep]]>
+            </line>
+            <line>
+              <![CDATA[About to begin executing method :- TestEngineWeb.afterMethod]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- BookACruiseStep -->
+        <test-method status="PASS" signature="afterMethod(java.lang.reflect.Method, org.testng.ITestResult)[pri:0, instance:com.vv.test.automation.web.stepdefinition.BookACruiseStep@341b80b2]" name="afterMethod" is-config="true" duration-ms="239" started-at="2018-04-12T10:52:55Z" finished-at="2018-04-12T10:52:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.vv.test.automation.web.stepdefinition.BookACruiseStep.BookACruiseStep()]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=BookACruiseStep status=FAILURE method=BookACruiseStep.BookACruiseStep()[pri:0, instance:com.vv.test.automation.web.stepdefinition.BookACruiseStep@341b80b2] output=About to begin Test :- BookACruiseStep]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Completed executing method  :- TestEngineWeb.afterMethod]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.vv.test.automation.web.stepdefinition.BookACruiseStep@341b80b2]" name="afterClass" is-config="true" duration-ms="6255" started-at="2018-04-12T10:52:55Z" finished-at="2018-04-12T10:53:02Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Completed executing method  :- TestEngineWeb.afterClass]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.vv.test.automation.web.stepdefinition.BookACruiseStep@341b80b2]" name="tearDownClass" is-config="true" duration-ms="3" started-at="2018-04-12T10:53:02Z" finished-at="2018-04-12T10:53:02Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Completed executing method  :- AbstractTestNGCucumberTests.tearDownClass]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.vv.test.automation.web.stepdefinition.BookACruiseStep@341b80b2]" name="afterTest" is-config="true" duration-ms="1" started-at="2018-04-12T10:54:35Z" finished-at="2018-04-12T10:54:35Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Completed executing method  :- TestEngineWeb.afterTest]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.vv.test.automation.web.stepdefinition.BookACruiseStep@341b80b2]" name="afterSuite" is-config="true" duration-ms="52" started-at="2018-04-12T10:54:35Z" finished-at="2018-04-12T10:54:35Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Completed executing method  :- TestEngineWeb.afterSuite]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- com.vv.test.automation.web.stepdefinition.BookACruiseStep -->
+      <class name="com.vv.test.automation.web.stepdefinition.SignUpAsLearnerStep">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.vv.test.automation.web.stepdefinition.SignUpAsLearnerStep@1b083826]" name="setUpClass" is-config="true" duration-ms="26" started-at="2018-04-12T10:53:02Z" finished-at="2018-04-12T10:53:02Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Completed executing method  :- AbstractTestNGCucumberTests.setUpClass]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.vv.test.automation.web.stepdefinition.SignUpAsLearnerStep@1b083826]" name="beforeClass" is-config="true" duration-ms="30913" started-at="2018-04-12T10:53:02Z" finished-at="2018-04-12T10:53:32Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Completed executing method  :- TestEngineWeb.beforeClass]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.vv.test.automation.web.stepdefinition.SignUpAsLearnerStep@1b083826]" name="beforeMethod" is-config="true" duration-ms="3" started-at="2018-04-12T10:53:32Z" finished-at="2018-04-12T10:53:32Z">
           <params>
             <param index="0">
               <value>
@@ -141,7 +376,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="SignUp()[pri:0, instance:com.vv.test.automation.web.stepdefinition.SignUpAsLearnerStep@534df152]" name="SignUp" duration-ms="8532" started-at="2018-04-11T13:31:43Z" description="KhanAcademy" finished-at="2018-04-11T13:31:52Z">
+        <test-method status="PASS" signature="SignUp()[pri:0, instance:com.vv.test.automation.web.stepdefinition.SignUpAsLearnerStep@1b083826]" name="SignUp" duration-ms="9469" started-at="2018-04-12T10:53:32Z" description="KhanAcademy" finished-at="2018-04-12T10:53:42Z">
           <reporter-output>
             <line>
               <![CDATA[About to begin Test :- SignUp]]>
@@ -157,7 +392,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- SignUp -->
-        <test-method status="PASS" signature="afterMethod(java.lang.reflect.Method, org.testng.ITestResult)[pri:0, instance:com.vv.test.automation.web.stepdefinition.SignUpAsLearnerStep@534df152]" name="afterMethod" is-config="true" duration-ms="251" started-at="2018-04-11T13:31:52Z" finished-at="2018-04-11T13:31:52Z">
+        <test-method status="PASS" signature="afterMethod(java.lang.reflect.Method, org.testng.ITestResult)[pri:0, instance:com.vv.test.automation.web.stepdefinition.SignUpAsLearnerStep@1b083826]" name="afterMethod" is-config="true" duration-ms="36" started-at="2018-04-12T10:53:42Z" finished-at="2018-04-12T10:53:42Z">
           <params>
             <param index="0">
               <value>
@@ -166,7 +401,7 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[[TestResult name=SignUp status=SUCCESS method=SignUpAsLearnerStep.SignUp()[pri:0, instance:com.vv.test.automation.web.stepdefinition.SignUpAsLearnerStep@534df152] output=About to begin Test :- SignUp]]]>
+                <![CDATA[[TestResult name=SignUp status=SUCCESS method=SignUpAsLearnerStep.SignUp()[pri:0, instance:com.vv.test.automation.web.stepdefinition.SignUpAsLearnerStep@1b083826] output=About to begin Test :- SignUp]]]>
               </value>
             </param>
           </params>
@@ -176,35 +411,100 @@
             </line>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.vv.test.automation.web.stepdefinition.SignUpAsLearnerStep@534df152]" name="afterClass" is-config="true" duration-ms="6138" started-at="2018-04-11T13:31:52Z" finished-at="2018-04-11T13:31:58Z">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.vv.test.automation.web.stepdefinition.SignUpAsLearnerStep@1b083826]" name="afterClass" is-config="true" duration-ms="6066" started-at="2018-04-12T10:53:42Z" finished-at="2018-04-12T10:53:48Z">
           <reporter-output>
             <line>
               <![CDATA[Completed executing method  :- TestEngineWeb.afterClass]]>
             </line>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.vv.test.automation.web.stepdefinition.SignUpAsLearnerStep@534df152]" name="tearDownClass" is-config="true" duration-ms="0" started-at="2018-04-11T13:31:58Z" finished-at="2018-04-11T13:31:58Z">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.vv.test.automation.web.stepdefinition.SignUpAsLearnerStep@1b083826]" name="tearDownClass" is-config="true" duration-ms="3" started-at="2018-04-12T10:53:48Z" finished-at="2018-04-12T10:53:48Z">
           <reporter-output>
             <line>
               <![CDATA[Completed executing method  :- AbstractTestNGCucumberTests.tearDownClass]]>
             </line>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.vv.test.automation.web.stepdefinition.SignUpAsLearnerStep@534df152]" name="afterTest" is-config="true" duration-ms="0" started-at="2018-04-11T13:31:58Z" finished-at="2018-04-11T13:31:58Z">
-          <reporter-output>
-            <line>
-              <![CDATA[Completed executing method  :- TestEngineWeb.afterTest]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.vv.test.automation.web.stepdefinition.SignUpAsLearnerStep@534df152]" name="afterSuite" is-config="true" duration-ms="41" started-at="2018-04-11T13:31:58Z" finished-at="2018-04-11T13:31:58Z">
-          <reporter-output>
-            <line>
-              <![CDATA[Completed executing method  :- TestEngineWeb.afterSuite]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- afterSuite -->
       </class> <!-- com.vv.test.automation.web.stepdefinition.SignUpAsLearnerStep -->
+      <class name="com.vv.test.automation.web.stepdefinition.LoginWithValidLearnerCredentialsStep">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.vv.test.automation.web.stepdefinition.LoginWithValidLearnerCredentialsStep@105fece7]" name="setUpClass" is-config="true" duration-ms="12" started-at="2018-04-12T10:53:48Z" finished-at="2018-04-12T10:53:48Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Completed executing method  :- AbstractTestNGCucumberTests.setUpClass]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.vv.test.automation.web.stepdefinition.LoginWithValidLearnerCredentialsStep@105fece7]" name="beforeClass" is-config="true" duration-ms="19826" started-at="2018-04-12T10:53:48Z" finished-at="2018-04-12T10:54:08Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Completed executing method  :- TestEngineWeb.beforeClass]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.vv.test.automation.web.stepdefinition.LoginWithValidLearnerCredentialsStep@105fece7]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2018-04-12T10:54:08Z" finished-at="2018-04-12T10:54:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.vv.test.automation.web.stepdefinition.LoginWithValidLearnerCredentialsStep.WithValidLoginCredentials()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Completed executing method  :- TestEngineWeb.beforeMethod]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="WithValidLoginCredentials()[pri:0, instance:com.vv.test.automation.web.stepdefinition.LoginWithValidLearnerCredentialsStep@105fece7]" name="WithValidLoginCredentials" duration-ms="20477" started-at="2018-04-12T10:54:08Z" description="WithValidLoginCredentials" finished-at="2018-04-12T10:54:28Z">
+          <reporter-output>
+            <line>
+              <![CDATA[About to begin Test :- WithValidLoginCredentials]]>
+            </line>
+            <line>
+              <![CDATA[About to begin executing method :- LoginWithValidLearnerCredentialsStep.WithValidLoginCredentials]]>
+            </line>
+            <line>
+              <![CDATA[Completed executing method  :- LoginWithValidLearnerCredentialsStep.WithValidLoginCredentials]]>
+            </line>
+            <line>
+              <![CDATA[About to begin executing method :- TestEngineWeb.afterMethod]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- WithValidLoginCredentials -->
+        <test-method status="PASS" signature="afterMethod(java.lang.reflect.Method, org.testng.ITestResult)[pri:0, instance:com.vv.test.automation.web.stepdefinition.LoginWithValidLearnerCredentialsStep@105fece7]" name="afterMethod" is-config="true" duration-ms="43" started-at="2018-04-12T10:54:28Z" finished-at="2018-04-12T10:54:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.vv.test.automation.web.stepdefinition.LoginWithValidLearnerCredentialsStep.WithValidLoginCredentials()]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=WithValidLoginCredentials status=SUCCESS method=LoginWithValidLearnerCredentialsStep.WithValidLoginCredentials()[pri:0, instance:com.vv.test.automation.web.stepdefinition.LoginWithValidLearnerCredentialsStep@105fece7] output=About to begin Test :- WithValidLoginCredentials]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Completed executing method  :- TestEngineWeb.afterMethod]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.vv.test.automation.web.stepdefinition.LoginWithValidLearnerCredentialsStep@105fece7]" name="afterClass" is-config="true" duration-ms="6168" started-at="2018-04-12T10:54:28Z" finished-at="2018-04-12T10:54:35Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Completed executing method  :- TestEngineWeb.afterClass]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.vv.test.automation.web.stepdefinition.LoginWithValidLearnerCredentialsStep@105fece7]" name="tearDownClass" is-config="true" duration-ms="1" started-at="2018-04-12T10:54:35Z" finished-at="2018-04-12T10:54:35Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Completed executing method  :- AbstractTestNGCucumberTests.tearDownClass]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.vv.test.automation.web.stepdefinition.LoginWithValidLearnerCredentialsStep -->
     </test> <!-- Test-chrome-Web -->
   </suite> <!-- Academy-Automation -->
 </testng-results>

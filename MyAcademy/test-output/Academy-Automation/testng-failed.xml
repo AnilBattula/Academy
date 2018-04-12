@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="6" configfailurepolicy="continue" guice-stage="DEVELOPMENT" name="Failed suite [Academy-Automation]" parallel="tests">
+  <listeners>
+    <listener class-name="com.vv.test.automation.listeners.ExecutionListener"/>
+  </listeners>
+  <test thread-count="6" name="Test-chrome-Web(failed)" parallel="tests">
+    <parameter name="cloudExecution" value="false"/>
+    <parameter name="os" value="Windows"/>
+    <parameter name="browser" value="chrome-Web"/>
+    <parameter name="os_version" value="7"/>
+    <parameter name="userRegion" value="US"/>
+    <parameter name="browser_version" value="63"/>
+    <parameter name="emailReport" value="false"/>
+    <parameter name="platform" value="windows"/>
+    <parameter name="seleniumGrid" value="false"/>
+    <groups>
+      <run>
+        <include name="smoke"/>
+        <include name="regression"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.vv.test.automation.web.stepdefinition.BookACruiseStep">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="BookACruiseStep"/>
+          <include name="afterTest"/>
+          <include name="setUpClass"/>
+          <include name="afterClass"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+          <include name="afterSuite"/>
+          <include name="beforeClass"/>
+          <include name="tearDownClass"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.vv.test.automation.web.stepdefinition.BookACruiseStep -->
+    </classes>
+  </test> <!-- Test-chrome-Web(failed) -->
+</suite> <!-- Failed suite [Academy-Automation] -->
