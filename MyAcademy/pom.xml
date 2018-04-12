@@ -277,7 +277,7 @@
 					<!-- Suite testng xml file to consider for test execution -->
 					<suiteXmlFiles>
 						<!-- <suiteXmlFile>${project.basedir}/testng_xmls/${suiteFile}</suiteXmlFile> -->
-						<suiteXmlFile>${project.basedir}/testng_xmls/pom.xml</suiteXmlFile>
+						<suiteXmlFile>${project.basedir}/testng_xmls/run.xml</suiteXmlFile>
 					</suiteXmlFiles>				
 				</configuration>
 			</plugin>
