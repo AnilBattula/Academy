@@ -2,10 +2,8 @@
 package com.vv.test.automation.web.stepdefinition;
 
 import static org.junit.Assert.assertTrue;
-
 import java.util.List;
 import java.util.Map;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.testng.Assert;
@@ -146,7 +144,8 @@ public class SignUpAsLearnerStep extends TestEngineWeb {
 	/**
 	 * The user has the access to khan academy and want to sign up as a learner.
 	 *
-	 * @throws Throwable the throwable
+	 * @throws Throwable
+	 *             the throwable
 	 */
 	@Given("^the user has the access to Khan Academy and want to sign up as a Learner$")
 	public void the_user_has_the_access_to_Khan_Academy_and_want_to_sign_up_as_a_Learner() throws Throwable {
@@ -166,7 +165,8 @@ public class SignUpAsLearnerStep extends TestEngineWeb {
 	/**
 	 * User enters valid data for signup.
 	 *
-	 * @throws Throwable the throwable
+	 * @throws Throwable
+	 *             the throwable
 	 */
 	@When("^user enters valid data for signup$")
 	public void user_enters_valid_data_for_signup() throws Throwable {
@@ -185,7 +185,8 @@ public class SignUpAsLearnerStep extends TestEngineWeb {
 	/**
 	 * User should be able to signup successfully as a learner.
 	 *
-	 * @throws Throwable the throwable
+	 * @throws Throwable
+	 *             the throwable
 	 */
 	@Then("^user should be able to signup successfully as a Learner$")
 	public void user_should_be_able_to_signup_successfully_as_a_Learner() throws Throwable {

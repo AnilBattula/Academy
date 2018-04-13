@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Academy-Automation">
-              <span class="suite-name border-failed">Academy-Automation</span>
+              <span class="suite-name border-passed">Academy-Automation</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Academy-Automation">
-                    <span>C:\Users\e002936\Desktop\11-04-18\MyAcademy\testng_xmls\run.xml</span>
+                    <span>C:\AutomationVV\Academy\MyAcademy\testng_xmls\run.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,21 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Academy-Automation" class="hide-methods failed suite-Academy-Automation"> (hide)</a> <!-- hide-methods failed suite-Academy-Automation -->
-                      <a href="#" panel-name="suite-Academy-Automation" class="show-methods failed suite-Academy-Automation"> (show)</a> <!-- show-methods failed suite-Academy-Automation -->
-                    </span>
-                    <div class="method-list-content failed suite-Academy-Automation">
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Academy-Automation" title="com.vv.test.automation.web.stepdefinition.BookACruiseStep" hash-for-method="BookACruiseStep">BookACruiseStep</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Academy-Automation -->
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -114,6 +100,11 @@
                       <a href="#" panel-name="suite-Academy-Automation" class="show-methods passed suite-Academy-Automation"> (show)</a> <!-- show-methods passed suite-Academy-Automation -->
                     </span>
                     <div class="method-list-content passed suite-Academy-Automation">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Academy-Automation" title="com.vv.test.automation.web.stepdefinition.BookACruiseStep" hash-for-method="BookACruiseStep">BookACruiseStep</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Academy-Automation" title="com.vv.test.automation.web.stepdefinition.SignUpAsLearnerStep" hash-for-method="SignUp">SignUp</a> <!-- method navigator-link -->
@@ -136,46 +127,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Academy-Automation" class="panel Academy-Automation">
-          <div class="suite-Academy-Automation-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.vv.test.automation.web.stepdefinition.BookACruiseStep</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="BookACruiseStep">
-                  </a> <!-- BookACruiseStep -->
-                  <span class="method-name">BookACruiseStep</span>
-                  <div class="stack-trace">cucumber.runtime.CucumberException: java.lang.AssertionError: Test Case Failed because - Failed to complete - the user is able to book a cruise
-	at cucumber.api.testng.TestNGCucumberRunner.runCukes(TestNGCucumberRunner.java:57)
-	at com.vv.test.automation.web.stepdefinition.BookACruiseStep.BookACruiseStep(BookACruiseStep.java:78)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-Caused by: java.lang.AssertionError: Test Case Failed because - Failed to complete - the user is able to book a cruise
-	at com.vv.test.automation.web.stepdefinition.BookACruiseStep.TestCaseStatus(BookACruiseStep.java:92)
-	at com.vv.test.automation.web.stepdefinition.BookACruiseStep.after(BookACruiseStep.java:108)
-	at cucumber.runtime.Utils$1.call(Utils.java:40)
-	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
-	at cucumber.runtime.Utils.invoke(Utils.java:34)
-	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
-	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
-	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
-	at cucumber.runtime.Runtime.runAfterHooks(Runtime.java:206)
-	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:46)
-	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
-	at cucumber.api.testng.TestNGCucumberRunner.runCukes(TestNGCucumberRunner.java:50)
-	... 21 more
-... Removed 21 stack frames
-</div> <!-- stack-trace -->
-                  <em>
-(BookACruise)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Academy-Automation-class-failed -->
           <div class="suite-Academy-Automation-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -210,10 +161,27 @@ Caused by: java.lang.AssertionError: Test Case Failed because - Failed to comple
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Academy-Automation-class-passed -->
+          <div class="suite-Academy-Automation-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.vv.test.automation.web.stepdefinition.BookACruiseStep</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="BookACruiseStep">
+                  </a> <!-- BookACruiseStep -->
+                  <span class="method-name">BookACruiseStep</span>
+                  <em>
+(BookACruise)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Academy-Automation-class-passed -->
         </div> <!-- panel Academy-Automation -->
         <div panel-name="test-xml-Academy-Automation" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\e002936\Desktop\11-04-18\MyAcademy\testng_xmls\run.xml</span>
+            <span class="header-content">C:\AutomationVV\Academy\MyAcademy\testng_xmls\run.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -302,15 +270,15 @@ data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'BookACruiseStep')
 data.setCell(0, 2, 'com.vv.test.automation.web.stepdefinition.BookACruiseStep')
-data.setCell(0, 3, 45303);
+data.setCell(0, 3, 42381);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'WithValidLoginCredentials')
 data.setCell(1, 2, 'com.vv.test.automation.web.stepdefinition.LoginWithValidLearnerCredentialsStep')
-data.setCell(1, 3, 20477);
+data.setCell(1, 3, 17954);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'SignUp')
 data.setCell(2, 2, 'com.vv.test.automation.web.stepdefinition.SignUpAsLearnerStep')
-data.setCell(2, 3, 9469);
+data.setCell(2, 3, 9380);
 window.suiteTableData['Academy-Automation']= { tableData: data, tableDiv: 'times-div-Academy-Automation'}
 return data;
 }
@@ -336,20 +304,20 @@ return data;
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
-              <span class="reporter-method-name">WithValidLoginCredentials</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">About to begin Test :- WithValidLoginCredentials</span>
-                <span class="reporter-method-output">About to begin executing method :- LoginWithValidLearnerCredentialsStep.WithValidLoginCredentials</span>
-                <span class="reporter-method-output">Completed executing method  :- LoginWithValidLearnerCredentialsStep.WithValidLoginCredentials</span>
-                <span class="reporter-method-output">About to begin executing method :- TestEngineWeb.afterMethod</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
               <span class="reporter-method-name">BookACruiseStep</span>
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output">About to begin Test :- BookACruiseStep</span>
                 <span class="reporter-method-output">About to begin executing method :- BookACruiseStep.BookACruiseStep</span>
                 <span class="reporter-method-output">Completed executing method  :- BookACruiseStep.BookACruiseStep</span>
+                <span class="reporter-method-output">About to begin executing method :- TestEngineWeb.afterMethod</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">WithValidLoginCredentials</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">About to begin Test :- WithValidLoginCredentials</span>
+                <span class="reporter-method-output">About to begin executing method :- LoginWithValidLearnerCredentialsStep.WithValidLoginCredentials</span>
+                <span class="reporter-method-output">Completed executing method  :- LoginWithValidLearnerCredentialsStep.WithValidLoginCredentials</span>
                 <span class="reporter-method-output">About to begin executing method :- TestEngineWeb.afterMethod</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
@@ -412,110 +380,108 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-test before">
                 <span class="method-name">beforeTest(org.testng.TestRunner@78aab498)</span>
-                <span class="method-start">37 ms</span>
+                <span class="method-start">33 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-class before">
                 <span class="method-name">setUpClass</span>
-                <span class="method-start">1619 ms</span>
+                <span class="method-start">1606 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-class before">
                 <span class="method-name">beforeClass</span>
-                <span class="method-start">1851 ms</span>
+                <span class="method-start">1884 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(public void com.vv.test.automation.web.stepdefinition.BookACruiseStep.BookACruiseStep())</span>
-                <span class="method-start">21987 ms</span>
+                <span class="method-start">46667 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">BookACruiseStep</span>
-                <span class="method-start">22109 ms</span>
+                <span class="method-start">46822 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod(public void com.vv.test.automation.web.stepdefinition.BookACruiseStep.BookACruiseStep(), [TestResult...)</span>
-                <span class="method-start">67415 ms</span>
+                <span class="method-start">89206 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">67654 ms</span>
+                <span class="method-start">89453 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">73909 ms</span>
+                <span class="method-start">95860 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.vv.test.automation.web.stepdefinition.SignUpAsLearnerStep</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUpClass</span>
-                <span class="method-start">73912 ms</span>
+                <span class="method-start">95860 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-class before">
                 <span class="method-name">beforeClass</span>
-                <span class="method-start">73938 ms</span>
+                <span class="method-start">95897 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(public void com.vv.test.automation.web.stepdefinition.SignUpAsLearnerStep.SignUp())</span>
-                <span class="method-start">104851 ms</span>
+                <span class="method-start">127700 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">SignUp</span>
-                <span class="method-start">104854 ms</span>
+                <span class="method-start">127702 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod(public void com.vv.test.automation.web.stepdefinition.SignUpAsLearnerStep.SignUp(), [TestResult name...)</span>
-                <span class="method-start">114324 ms</span>
+                <span class="method-start">137083 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">114360 ms</span>
+                <span class="method-start">137144 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">120426 ms</span>
+                <span class="method-start">143233 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.vv.test.automation.web.stepdefinition.LoginWithValidLearnerCredentialsStep</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUpClass</span>
-                <span class="method-start">120429 ms</span>
+                <span class="method-start">143233 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-class before">
                 <span class="method-name">beforeClass</span>
-                <span class="method-start">120441 ms</span>
+                <span class="method-start">143234 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(public void com.vv.test.automation.web.stepdefinition.LoginWithValidLearnerCredentialsStep.WithValid...)</span>
-                <span class="method-start">140268 ms</span>
+                <span class="method-start">160069 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">WithValidLoginCredentials</span>
-                <span class="method-start">140270 ms</span>
+                <span class="method-start">160071 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod(public void com.vv.test.automation.web.stepdefinition.LoginWithValidLearnerCredentialsStep.WithValid...)</span>
-                <span class="method-start">160749 ms</span>
+                <span class="method-start">178025 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">160792 ms</span>
+                <span class="method-start">178044 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">166960 ms</span>
+                <span class="method-start">184231 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.vv.test.automation.web.stepdefinition.BookACruiseStep</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">166962 ms</span>
+                <span class="method-start">184231 ms</span>
               </div> <!-- configuration-test after -->
               <div class="configuration-suite after">
                 <span class="method-name">afterSuite</span>
-                <span class="method-start">166982 ms</span>
+                <span class="method-start">184248 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

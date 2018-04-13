@@ -20,6 +20,6 @@
 Feature: BookACruise
 
   Scenario: BookingCruise--2
-    Given the user has the access to TallLink 
+    Given the user has the access to TallLink
     When the user is able to book a cruise
     Then user should be able to navigate Payment page

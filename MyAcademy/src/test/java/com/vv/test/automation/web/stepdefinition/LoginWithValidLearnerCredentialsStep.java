@@ -4,12 +4,10 @@ import static org.junit.Assert.assertTrue;
 
 import java.util.List;
 import java.util.Map;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
 import com.google.common.base.Optional;
 import com.relevantcodes.extentreports.LogStatus;
 import com.vv.test.automation.fileutils.ExcelReader;
@@ -18,7 +16,6 @@ import com.vv.test.automation.utilities.CommonVariables;
 import com.vv.test.automation.web.accelerators.ActionsLibrary;
 import com.vv.test.automation.web.accelerators.TestEngineWeb;
 import com.vv.test.automation.web.pages.LoginAcademyPage;
-
 import cucumber.api.CucumberOptions;
 import cucumber.api.Scenario;
 import cucumber.api.java.After;
@@ -28,6 +25,9 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import cucumber.api.testng.TestNGCucumberRunner;
 
+/**
+ * The Class LoginWithValidLearnerCredentialsStep.
+ */
 @CucumberOptions(features = "src/test/resources/feature/LoginToAcademy.feature", plugin = "json:target/LoginToAcademy.json", tags = "@WithValidLoginCredentials")
 
 public class LoginWithValidLearnerCredentialsStep extends TestEngineWeb {
@@ -41,7 +41,7 @@ public class LoginWithValidLearnerCredentialsStep extends TestEngineWeb {
 	/** The scenariotxt. */
 	public String url, scenariotxt, day, year, month;
 
-
+	/** The obj login academy page. */
 	LoginAcademyPage objLoginAcademyPage;
 
 	/** The test case failure reason. */
@@ -132,7 +132,6 @@ public class LoginWithValidLearnerCredentialsStep extends TestEngineWeb {
 			this.day = ExcelReader.fn_GetCellData(this.sheetPath, this.sheetName, row, "Day");
 			this.month = ExcelReader.fn_GetCellData(this.sheetPath, this.sheetName, row, "Month");
 			this.year = ExcelReader.fn_GetCellData(this.sheetPath, this.sheetName, row, "Year");
-			//signUpPage = new SignUpPage(CommonVariables.CommonDriver.get());
 			objLoginAcademyPage = new LoginAcademyPage(CommonVariables.CommonDriver.get());
 			actionLib = CommonVariables.getActionLib();
 		} catch (Exception e) {
@@ -141,56 +140,64 @@ public class LoginWithValidLearnerCredentialsStep extends TestEngineWeb {
 		}
 	}
 
-	
+	/**
+	 * The user has valid login credentials.
+	 *
+	 * @throws Throwable the throwable
+	 */
+	@Given("^the user has valid login credentials$")
+	public void the_user_has_valid_login_credentials() throws Throwable {
+		try {
+			objLoginAcademyPage.loginWithCredentials("b12test@gmail.com", "Test@12345");
 
-@Given("^the user has valid login credentials$")
-public void the_user_has_valid_login_credentials() throws Throwable {
-	try {
-		objLoginAcademyPage.loginWithCredentials("b12test@gmail.com", "Test@12345");	
-		
-	} catch (Exception e) {
-		testCaseFailureReason = "Failed to complete - "
-				+ "the user has valid login credentials";
-		String stackTrace = extentLogs.getStackTraceAsString("Test", testCaseFailureReason, e);
-		extentLogs.fail(scenarioName, testCaseFailureReason + "Failed Reason : " + stackTrace);
-		testCaseStatus = false;
+		} catch (Exception e) {
+			testCaseFailureReason = "Failed to complete - " + "the user has valid login credentials";
+			String stackTrace = extentLogs.getStackTraceAsString("Test", testCaseFailureReason, e);
+			extentLogs.fail(scenarioName, testCaseFailureReason + "Failed Reason : " + stackTrace);
+			testCaseStatus = false;
+		}
+
 	}
 
-  
-}
+	/**
+	 * The user enters valid user name and password.
+	 *
+	 * @throws Throwable the throwable
+	 */
+	@When("^the user enters valid user name and password$")
+	public void the_user_enters_valid_user_name_and_password() throws Throwable {
 
-@When("^the user enters valid user name and password$")
-public void the_user_enters_valid_user_name_and_password() throws Throwable {
- 
-	try {
-		String actValue =objLoginAcademyPage.getUserProfileName();
-		String expValue="Name";
-		Assert.assertTrue(actValue.contains(expValue));
-		//logging out
-		objLoginAcademyPage.logOut();
+		try {
+			String actValue = objLoginAcademyPage.getUserProfileName();
+			String expValue = "Name";
+			Assert.assertTrue(actValue.contains(expValue));
+			objLoginAcademyPage.logOut();
 
-	} catch (Exception e) {
-		testCaseFailureReason = "Failed to complete - "
-				+ "the user enters valid user name and password";
-		String stackTrace = extentLogs.getStackTraceAsString("Test", testCaseFailureReason, e);
-		extentLogs.fail(scenarioName, testCaseFailureReason + "Failed Reason : " + stackTrace);
-		testCaseStatus = false;
+		} catch (Exception e) {
+			testCaseFailureReason = "Failed to complete - " + "the user enters valid user name and password";
+			String stackTrace = extentLogs.getStackTraceAsString("Test", testCaseFailureReason, e);
+			extentLogs.fail(scenarioName, testCaseFailureReason + "Failed Reason : " + stackTrace);
+			testCaseStatus = false;
+		}
 	}
-}
 
-@Then("^user should be logged in successfully$")
-public void user_should_be_logged_in_successfully() throws Throwable {
-	try {
-		String title = CommonVariables.CommonDriver.get().getTitle();
-		assertTrue(title.contains("Khan Academy"));
+	/**
+	 * User should be logged in successfully.
+	 *
+	 * @throws Throwable the throwable
+	 */
+	@Then("^user should be logged in successfully$")
+	public void user_should_be_logged_in_successfully() throws Throwable {
+		try {
+			String title = CommonVariables.CommonDriver.get().getTitle();
+			assertTrue(title.contains("Khan Academy"));
 
-	} catch (Exception e) {
-		testCaseFailureReason = "Failed to complete - "
-				+ "user should be logged in successfully";
-		String stackTrace = extentLogs.getStackTraceAsString("Test", testCaseFailureReason, e);
-		extentLogs.fail(scenarioName, testCaseFailureReason + "Failed Reason : " + stackTrace);
-		testCaseStatus = false;
+		} catch (Exception e) {
+			testCaseFailureReason = "Failed to complete - " + "user should be logged in successfully";
+			String stackTrace = extentLogs.getStackTraceAsString("Test", testCaseFailureReason, e);
+			extentLogs.fail(scenarioName, testCaseFailureReason + "Failed Reason : " + stackTrace);
+			testCaseStatus = false;
+		}
 	}
-}
 
 }

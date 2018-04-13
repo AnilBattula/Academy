@@ -16,7 +16,6 @@
 #""
 ## (Comments)
 #Sample Feature Definition Template
-
 @KhanAcademySignuUp
 Feature: SignUpForKhanAcademy
 
