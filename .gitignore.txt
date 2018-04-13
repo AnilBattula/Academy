@@ -1,0 +1,10 @@
+MyAcademy/test-output/*
+MyAcademy/logs/*
+MyAcademy/target/*
+MyAcademy/.classpath
+MyAcademy/debug
+MyAcademy/debug/.metadata/*
+MyAcademy/debug/.recommenders/
+MyAcademy/.metadata/.log
+MyAcademy/browserstack.err
+
